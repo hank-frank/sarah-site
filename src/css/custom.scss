@@ -1,4 +1,5 @@
 $background: #343128;
+$grey: #b1b1b1;
 
 $short-wide: 'Lexend Zetta', sans-serif;
 $decorative: 'Abril Fatface', cursive;
@@ -12,12 +13,15 @@ body {
 .section-container {
     background-color: $background;
     display: flex;
-    
+    align-content: center;
+    justify-content: center;
+
 }
 
 .main-header-text {
     font-family: $decorative;
     font-size: 4rem;
+    text-align: center;
 }
 
 .flex-container {
@@ -30,9 +34,136 @@ body {
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
+    margin: 3vw 0 0 0
 }
 
 .column {
     align-content: flex-start;
+    width: 40vw;
+    margin: 0vw 3vw;
+    align-content: flex-end;
+    justify-content: center;
+
 }
+
+.title {
+    font-family: $short-wide;
+    font-size: 1rem;
+}
+
+#address-link {
+    text-decoration: none;
+}
+
+.title {
+    text-align: center;
+}
+
+.salon-address {
+    font-family: $text;
+    font-size: 1.5rem;
+    text-align: center;
+}
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:active {
+    color: white;
+    text-decoration: none;
+}
+.a:visited {
+    color: white;
+    text-decoration: none;
+}
+.a:link {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: $grey;
+}
+
+.phone-number {
+    font-family: $text;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.email {
+    font-family: $text;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.book-now-button {
+    width: 18vw;
+    height: 6vw;
+    border: 2px solid white;
+    border-radius: 5px;
+    background: none;
+    color: white;
+    font-family: $short-wide;
+    font-size: 1.6rem;
+}
+
+.sub-section {
+    text-align: center;
+    width: 25vw;
+}
+.decorative-title {
+    font-family: $decorative;
+    font-size: 3.4rem;
+}
+ .about-text {
+     font-family: $text;
+     font-size: 1.6rem;
+ }
+
+ .testimonial-text {
+     font-family: $text;
+     font-size: 1rem;
+ }
+
+ .testimonial-name {
+     font-family: $text;
+     font-size: 1rem;
+     justify-content: flex-end;
+ }
+
+ .sub-section-headline {
+    font-family: $short-wide;
+    font-size: 1.4rem;
+ }
+
+ .mini-title {
+     font-family: $short-wide;
+     font-size: .8rem;
+ }
+
+ .time {
+    font-family: $short-wide;
+    font-size: .8rem;
+ }
+
+ .service-description {
+    font-family: $short-wide;
+    font-size: .8rem;
+ }
+
+ .rates-cost {
+    font-family: $short-wide;
+    font-size: .8rem;
+ }
+
+ .button-bottom {
+     margin: 0 0 3vw 0;
+ }
+
+ 
+
+
+
 
