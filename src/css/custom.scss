@@ -5,8 +5,19 @@ $decorative: 'Abril Fatface', cursive;
 $text: 'Raleway', sans-serif;
 
 
+body {
+    color: white;
+}
+
 .section-container {
     background-color: $background;
+    display: flex;
+    
+}
+
+.main-header-text {
+    font-family: $decorative;
+    font-size: 4rem;
 }
 
 .flex-container {
