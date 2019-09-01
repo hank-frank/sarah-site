@@ -5,6 +5,12 @@ $short-wide: 'Lexend Zetta', sans-serif;
 $decorative: 'Abril Fatface', cursive;
 $text: 'Raleway', sans-serif;
 
+@mixin xs {
+    @media (max-width: 400px) {
+        @content
+    }
+}
+
 @mixin small {
     @media (max-width: 768px) {
         @content;
@@ -19,7 +25,7 @@ $text: 'Raleway', sans-serif;
 
 body {
     color: white;
-    width: 100vw;
+    // width: 100vw;
     margin: 0 0;
 
 }
@@ -40,6 +46,10 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    // align-content: center;
+    justify-content: center;
 
     @include small {
         width: 100vw;
@@ -49,6 +59,7 @@ body {
 .section-container {
     background-color: $background;
     display: flex;
+    flex-direction: column;
     align-content: center;
     justify-content: center;
 
@@ -59,6 +70,11 @@ body {
     font-size: 4rem;
     text-align: center;
     margin: 0 0;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .flex-container {
@@ -71,21 +87,58 @@ body {
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
-    margin: 3vw 0 0 0
+    margin: 3vw 0 0 0;
+}
+
+.book-now-button {
+    width: 18vw;
+    min-width: 240px;
+    min-height: 80px;;
+    height: 6vw;
+    border: 2px solid white;
+    border-radius: 5px;
+    background: none;
+    color: white;
+    font-family: $short-wide;
+    font-size: 1.6rem;
+    overflow: auto;
+}
+
+.book-now-button:hover {
+    border: 2px solid white;
+    background-color: white;
+    color: $background;
+}
+
+.top-button {
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 2px;
 }
 
 .column {
-    align-content: flex-start;
-    width: 40vw;
+    max-width: 40%;
+    min-width: 400px;
     margin: 0vw 3vw;
     align-content: flex-end;
     justify-content: center;
+    @include xs {
+        max-width: 80vw;
+    }
+}
 
+.sub-section {
+    text-align: center;
+    overflow: auto;
+    overflow-x: visible;
+    // min-width: 300px;
 }
 
 .title {
     font-family: $short-wide;
-    font-size: 1rem;
+    font-size: .8rem;
 }
 
 #address-link {
@@ -98,9 +151,10 @@ body {
 
 .salon-address {
     font-family: $text;
-    font-size: 2.8rem;
+    font-size: 2rem;
     text-align: center;
 }
+
 a {
     color: white;
     text-decoration: none;
@@ -110,10 +164,12 @@ a:active {
     color: white;
     text-decoration: none;
 }
+
 .a:visited {
     color: white;
     text-decoration: none;
 }
+
 .a:link {
     color: white;
     text-decoration: none;
@@ -125,48 +181,44 @@ a:hover {
 
 .phone-number {
     font-family: $text;
-    font-size: 2.8rem;
+    font-size: 2rem;
     text-align: center;
 }
 
 .email {
     font-family: $text;
-    font-size: 1.5rem;
+    font-size: 2rem;
     text-align: center;
 }
 
-.book-now-button {
-    width: 18vw;
-    height: 6vw;
-    border: 2px solid white;
-    border-radius: 5px;
-    background: none;
-    color: white;
-    font-family: $short-wide;
-    font-size: 1.6rem;
-}
-
-.sub-section {
-    text-align: center;
-    width: 25vw;
-}
 .decorative-title {
     font-family: $decorative;
-    font-size: 3.4rem;
+    font-size: 2.5rem;
+    // width: 100%;
 }
  .about-text {
      font-family: $text;
-     font-size: 1.6rem;
+     font-size: 1rem;
+     max-width: 95vw;
+     margin: 0 0;
+     @include xs {
+         font-size: .7rem;
+     }
+ }
+
+ .quote {
+    max-width: 95vw;
  }
 
  .testimonial-text {
      font-family: $text;
-     font-size: 1rem;
+     font-size: .8rem;
+     max-width: 95vw;
  }
 
  .testimonial-name {
      font-family: $text;
-     font-size: 1rem;
+     font-size: .8rem;
      justify-content: flex-end;
  }
 
@@ -188,6 +240,7 @@ a:hover {
  .service-description {
     font-family: $short-wide;
     font-size: .7rem;
+    max-width: 95vw;
  }
 
  .rates-cost {
@@ -197,6 +250,15 @@ a:hover {
 
  .button-bottom {
      margin: 0 0 3vw 0;
+ }
+
+ .imbedded-map {
+     width: 100%;
+     height: 400px;
+     @include xs {
+         height: 200px;
+         width: 200px;
+     }
  }
 
  
