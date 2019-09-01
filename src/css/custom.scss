@@ -1,3 +1,27 @@
-.red {
-    color: red;
+$background: #343128;
+
+$short-wide: 'Lexend Zetta', sans-serif;
+$decorative: 'Abril Fatface', cursive;
+$text: 'Raleway', sans-serif;
+
+
+.section-container {
+    background-color: $background;
 }
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.column {
+    align-content: flex-start;
+}
+
