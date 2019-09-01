@@ -5,9 +5,45 @@ $short-wide: 'Lexend Zetta', sans-serif;
 $decorative: 'Abril Fatface', cursive;
 $text: 'Raleway', sans-serif;
 
+@mixin small {
+    @media (max-width: 768px) {
+        @content;
+    }
+  }
+  @mixin medium {
+    @media (max-width: 769px) {
+        @content;
+    }
+  }
+
 
 body {
     color: white;
+    width: 100vw;
+    margin: 0 0;
+
+}
+
+#root {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    width: 100vw;
+  }
+
+.landing-image {
+    background-image: url(../assets/hair-2-1.jpg);
+    background-color: #cccccc;
+    height: 80vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+    @include small {
+        width: 100vw;
+    }
 }
 
 .section-container {
@@ -22,6 +58,7 @@ body {
     font-family: $decorative;
     font-size: 4rem;
     text-align: center;
+    margin: 0 0;
 }
 
 .flex-container {
@@ -61,7 +98,7 @@ body {
 
 .salon-address {
     font-family: $text;
-    font-size: 1.5rem;
+    font-size: 2.8rem;
     text-align: center;
 }
 a {
@@ -88,7 +125,7 @@ a:hover {
 
 .phone-number {
     font-family: $text;
-    font-size: 1.5rem;
+    font-size: 2.8rem;
     text-align: center;
 }
 
@@ -140,22 +177,22 @@ a:hover {
 
  .mini-title {
      font-family: $short-wide;
-     font-size: .8rem;
+     font-size: 1rem;
  }
 
  .time {
     font-family: $short-wide;
-    font-size: .8rem;
+    font-size: .7rem;
  }
 
  .service-description {
     font-family: $short-wide;
-    font-size: .8rem;
+    font-size: .7rem;
  }
 
  .rates-cost {
     font-family: $short-wide;
-    font-size: .8rem;
+    font-size: .7rem;
  }
 
  .button-bottom {

@@ -13,10 +13,15 @@ class App extends Component {
     render() {
         return (
         <React.Fragment>
-            <div className="section-container landing-image">
-		        <h1 className="main-header-text">Sarah Vaughan<br/>Stylist</h1>
-		        <a href="https://www.schedulicity.com/scheduling/sva6bt/services">Book Now</a>
-	        </div>
+            <div className="landing-image">
+                <div>  
+		            <h1 className="main-header-text">Sarah Vaughan<br/>Stylist</h1>
+                </div>
+                {/* <a href="https://www.schedulicity.com/scheduling/sva6bt/services">Book Now</a> */}
+                <div className="row">
+                    <button className="book-now-button">Book Now!</button>
+                </div>
+	            </div>
             <div className="section-container">
                 <div className="flex-container">
                     <div className="row">
@@ -27,7 +32,7 @@ class App extends Component {
                             </a>
                         </div>
                         <div className="column">
-                            <h6 className="title">Phone</h6>
+                            <h6 className="title">PHONE</h6>
                             <p className="phone-number">619-549-8080</p>
                             <p className="email">Email</p>
                         </div>
