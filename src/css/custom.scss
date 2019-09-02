@@ -1,7 +1,7 @@
 $background: #343128;
 $grey: #b1b1b1;
 
-$short-wide: 'Lexend Zetta', sans-serif;
+$short-wide: 'Montserrat', sans-serif;
 $decorative: 'Abril Fatface', cursive;
 $text: 'Raleway', sans-serif;
 
@@ -120,7 +120,6 @@ body {
 
 .column {
     max-width: 40%;
-    min-width: 400px;
     margin: 0vw 3vw;
     align-content: flex-end;
     justify-content: center;
@@ -137,7 +136,7 @@ body {
 }
 
 .title {
-    font-family: $short-wide;
+    font-family: $decorative;
     font-size: .8rem;
 }
 
@@ -150,9 +149,10 @@ body {
 }
 
 .salon-address {
-    font-family: $text;
+    font-family: $decorative;
     font-size: 2rem;
     text-align: center;
+    font-weight: 300;  
 }
 
 a {
@@ -208,43 +208,54 @@ a:hover {
 
  .quote {
     max-width: 95vw;
+    font-family: $short-wide;
+    font-weight: 300;
+    font-size: 1.6rem;
  }
 
  .testimonial-text {
-     font-family: $text;
+     border-left: 1px solid white;
+     padding: .5vw;
+     font-family: $short-wide;
+     font-weight: 300;
      font-size: .8rem;
      max-width: 95vw;
+     text-align: left;
  }
 
  .testimonial-name {
      font-family: $text;
-     font-size: .8rem;
-     justify-content: flex-end;
+     font-size: 1rem;
+     text-align: right;
  }
 
  .sub-section-headline {
     font-family: $short-wide;
-    font-size: 1.4rem;
+    font-weight: 500;
+    font-size: 1rem;
  }
 
  .mini-title {
      font-family: $short-wide;
-     font-size: 1rem;
+     font-size: .8rem;
  }
 
  .time {
     font-family: $short-wide;
+    font-weight: 300;
     font-size: .7rem;
  }
 
  .service-description {
     font-family: $short-wide;
+    font-weight: 300;
     font-size: .7rem;
     max-width: 95vw;
  }
 
  .rates-cost {
     font-family: $short-wide;
+    font-weight: 300;
     font-size: .7rem;
  }
 

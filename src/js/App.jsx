@@ -49,7 +49,7 @@ class App extends Component {
                         <div className="sub-section">
                             <h3 className="decorative-title">about sarah</h3>
                                 <p className="about-text">For over 20 years Sarah Vaughan has been doing hair and loving it. She's worked at top salons throughout the Pacific Northwest, Honolulu and San Diego. Focusing specifically on cut and color services, she also provides smoothing treatments, extension services and perms. Sarah specializes in precision hair cutting, and has extensive training though the Vidal Sassoon and Bumble and Bumble programs.</p>
-                                <p className="quote">“From classic to creative, I believe that your hair should compliment your lifestyle and personal style to help you look and feel your best.” — SARAH</p>
+                                <p className="quote">“From classic to creative, I believe that your hair should compliment your lifestyle and personal style to help you look and feel your best.”<br/> — SARAH</p>
                         </div>
                         <div className="sub-section">
                             <h3 className="decorative-title">testimonials</h3>
@@ -61,9 +61,6 @@ class App extends Component {
                                 <p className="testimonial-name">- Lena C.</p>
                         </div>
                         <div className="sub-section">
-                            <p id="address-above-map">
-                                KAYA<br/>3036 Adams Ave<br/>
-                                San Diego, CA 92116 </p>
                             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3355.1021940699457!2d-117.13158618415824!3d32.763022780976286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80d954ffccb3aca5%3A0x85dfb94df841bf69!2sKaya+Salon!5e0!3m2!1sen!2sus!4v1556730394371!5m2!1sen!2sus" className="imbedded-map" />
                         </div>
                     </div>
