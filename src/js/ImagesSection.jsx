@@ -7,10 +7,8 @@ class ImagesSection extends Component {
         this.state = {
             
         };
-        
     };
 
-    
         render () {
             return (
                 <React.Fragment>
@@ -22,12 +20,11 @@ class ImagesSection extends Component {
                         <img className='hair-img' src={require('../assets/hair-img-5.jpg')} />
                         <img className='hair-img' src={require('../assets/hair-img-6.jpg')} />
                         <img className='hair-img' src={require('../assets/hair-img-7.jpg')} />
-                        {/* <img className='hair-img' src={require('../assets/hair12.jpg')} /> */}
-                        {/* <img className='hair-img' src={require('../assets/hair17.jpg')} /> */}
-                        <img className='hair-img' src={require('../assets/hair38.jpg')} />
-                        <img className='hair-img' src={require('../assets/hair39.jpg')} />
-                        <img className='hair-img' src={require('../assets/hair42.jpg')} />
-                        <img className='hair-img' src={require('../assets/hair47.jpg')} />
+                        <img className='hair-img' src={require('../assets/Hair12.jpg')} />
+                        <img className='hair-img' src={require('../assets/Hair38.jpg')} />
+                        <img className='hair-img' src={require('../assets/Hair39.jpg')} />
+                        <img className='hair-img' src={require('../assets/Hair42.jpg')} />
+                        <img className='hair-img' src={require('../assets/Hair47.jpg')} />
                         <img className='hair-img' src={require('../assets/Kaya+Interior2.jpg')} />
                     </div>
                 </React.Fragment>
