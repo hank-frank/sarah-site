@@ -4,7 +4,7 @@
   "description": "site for Sarah Vaughan Hairstylist",
   "main": "index.js",
   "engines": {
-    "node": "10.6.1"
+    "node": "10.6.x"
   },
   "scripts": {
     "start": "node server",
