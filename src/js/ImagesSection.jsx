@@ -22,7 +22,7 @@ class ImagesSection extends Component {
                         <img className='hair-img' src={require('../assets/hair-img-5.jpg')} />
                         <img className='hair-img' src={require('../assets/hair-img-6.jpg')} />
                         <img className='hair-img' src={require('../assets/hair-img-7.jpg')} />
-                        <img className='hair-img' src={require('../assets/hair12.jpg')} />
+                        {/* <img className='hair-img' src={require('../assets/hair12.jpg')} /> */}
                         {/* <img className='hair-img' src={require('../assets/hair17.jpg')} /> */}
                         <img className='hair-img' src={require('../assets/hair38.jpg')} />
                         <img className='hair-img' src={require('../assets/hair39.jpg')} />
