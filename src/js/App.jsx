@@ -37,13 +37,13 @@ class App extends Component {
                             <p className="email">Email</p>
                         </div>
                     </div>
-                    <div className="row">
-                        <button className="book-now-button">Book Now!</button>
-                    </div>
                 </div>
             </div>
             <ImagesSection />
             <div className="section-container">
+                    <div className="row">
+                        <button className="book-now-button">Book Now!</button>
+                    </div>
                 <div className="row">
                     <div className="column">
                         <div className="sub-section">

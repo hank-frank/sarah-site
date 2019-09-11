@@ -16,6 +16,7 @@ $text: 'Raleway', sans-serif;
         @content;
     }
   }
+  
   @mixin medium {
     @media (max-width: 769px) {
         @content;
@@ -272,7 +273,21 @@ a:hover {
      }
  }
 
- 
+ .img-flex-container {
+     padding: 5vh 0 0 0;
+     display: flex;
+     justify-content: space-evenly;
+     flex-direction: row;
+     flex-wrap: wrap;
+     background-color: $background;
+
+ }
+
+ .hair-img {
+     width: auto;
+     height: 200px;
+     margin: 2vh 2vw;
+ }
 
 
 
